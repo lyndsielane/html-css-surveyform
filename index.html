@@ -7,32 +7,51 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Feedback Survey Form</h1>
-    <form>
-      <label for="Name">Name:</label><br />
-      <input type="text" id="name" name="name" /><br />
-      <label for="Email">Email:</label><br />
-      <input type="email" id="email" name="email" /><br />
-      <label for="Age">Age:</label><br />
-      <input type="number" id="age" name="age" min="1" max="100" /><br />
-      <label for="feedback">Feedback Type:</label><br />
-      <select id="feedback" name="feedback">
-        <option value="positive">Positive</option>
-        <option value="neutral">Neutral</option>
-        <option value="negative">Negative</option></select
-      ><br />
-      <label for="services">Services Used:</label><br />
-      <input type="checkbox" id="service1" name="service1" value="service" />
-      <label for="service1">Service 1</label><br />
-      <input type="checkbox" id="service2" name="service2" value="service" />
-      <label for="service2">Service 2</label><br />
-      <input type="checkbox" id="service3" name="service3" value="service" />
-      <label for="service1">Service 3</label><br />
-      <label for="comments" id="comments" name="comments"
-        >Additional Comments:</label
-      ><br />
-      <textarea name="comments" rows="3" cols="30"></textarea><br />
-      <button type="button">Submit Feedback</button>
-    </form>
+    <div class="container">
+      <h1>Feedback Survey Form</h1>
+      <form>
+        <label for="Name">Name:</label><br />
+        <input type="text" id="name" name="name" /><br />
+        <label for="Email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="Age">Age:</label><br />
+        <input type="number" id="age" name="age" min="1" max="100" /><br />
+        <label for="feedback">Feedback Type:</label><br />
+        <select id="feedback" name="feedback">
+          <option value="positive">Positive</option>
+          <option value="neutral">Neutral</option>
+          <option value="negative">Negative</option></select
+        ><br />
+        <fieldset>
+          <label for="services">Services Used:</label><br />
+          <label for="service1">Service 1</label>
+          <input
+            type="checkbox"
+            id="service1"
+            name="service1"
+            value="service"
+          />
+          <label for="service2">Service 2</label>
+          <input
+            type="checkbox"
+            id="service2"
+            name="service2"
+            value="service"
+          />
+          <label for="service1">Service 3</label>
+          <input
+            type="checkbox"
+            id="service3"
+            name="service3"
+            value="service"
+          />
+        </fieldset>
+        <label for="comments" id="comments" name="comments"
+          >Additional Comments:</label
+        ><br />
+        <textarea name="comments" rows="3" cols="30"></textarea><br />
+        <button type="button">Submit Feedback</button>
+      </form>
+    </div>
   </body>
 </html>
